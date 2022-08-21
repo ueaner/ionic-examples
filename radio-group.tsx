@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonList, IonRadioGroup, IonListHeader, IonLabel, IonRadio, IonItem, IonContent } from '@ionic/react';
+import { IonList, IonRadioGroup, IonListHeader, IonLabel, IonRadio, IonItem, IonContent, IonPage } from '@ionic/react';
 
 export const RadioGroupExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     <IonList>
       <IonRadioGroup>
         <IonListHeader>
@@ -37,5 +37,5 @@ export const RadioGroupExample: React.FC = () => (
         </IonItem>
       </IonRadioGroup>
     </IonList>
-  </IonContent>
+  </IonContent></IonPage>
 );

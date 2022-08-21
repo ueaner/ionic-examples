@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonBadge, IonItem, IonLabel, IonContent } from '@ionic/react';
+import { IonBadge, IonItem, IonLabel, IonContent, IonPage } from '@ionic/react';
 
 export const BadgeExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default --*/}
     <IonBadge>99</IonBadge>
 
@@ -23,5 +23,5 @@ export const BadgeExample: React.FC = () => (
       <IonLabel>My Item</IonLabel>
       <IonBadge slot="end">22</IonBadge>
     </IonItem>
-  </IonContent>
+  </IonContent></IonPage>
 );

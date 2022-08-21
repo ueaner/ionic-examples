@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider } from '@ionic/react';
 
-export const InputExamples: React.FC = () => {
+export const InputExample: React.FC = () => {
 
   const [text, setText] = useState<string>();
   const [number, setNumber] = useState<number>();

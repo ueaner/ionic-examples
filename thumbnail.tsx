@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonThumbnail, IonItem, IonLabel, IonContent } from '@ionic/react';
+import { IonThumbnail, IonItem, IonLabel, IonContent, IonPage } from '@ionic/react';
 
 export const ThumbnailExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     <IonThumbnail>
       <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
     </IonThumbnail>
@@ -13,5 +13,5 @@ export const ThumbnailExample: React.FC = () => (
       </IonThumbnail>
       <IonLabel>Item Thumbnail</IonLabel>
     </IonItem>
-  </IonContent>
+  </IonContent></IonPage>
 );

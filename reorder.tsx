@@ -1,9 +1,9 @@
 import React from 'react';
-import { IonIcon, IonItem, IonLabel, IonReorder, IonReorderGroup, IonContent } from '@ionic/react';
+import { IonIcon, IonItem, IonLabel, IonReorder, IonReorderGroup, IonContent, IonPage } from '@ionic/react';
 import { pizza } from 'ionicons/icons';
 
 export const ReorderExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- The reorder gesture is disabled by default, enable it to drag and drop items --*/}
     <IonReorderGroup disabled={false}>
       {/*-- Default reorder icon, end aligned items --*/}
@@ -56,5 +56,5 @@ export const ReorderExample: React.FC = () => (
         </IonItem>
       </IonReorder>
     </IonReorderGroup>
-  </IonContent>
+  </IonContent></IonPage>
 );

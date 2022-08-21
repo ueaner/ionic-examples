@@ -4,11 +4,11 @@ import {
   IonChip,
   IonItem,
   IonLabel,
-  IonContent,
+  IonContent, IonPage,
 } from "@ionic/react";
 
-const AvatarExample: React.FC = () => (
-  <IonContent>
+export const AvatarExample: React.FC = () => (
+  <IonPage><IonContent>
     <IonAvatar>
       <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
     </IonAvatar>
@@ -26,7 +26,5 @@ const AvatarExample: React.FC = () => (
       </IonAvatar>
       <IonLabel>Item Avatar</IonLabel>
     </IonItem>
-  </IonContent>
+  </IonContent></IonPage>
 );
-
-export default AvatarExample;

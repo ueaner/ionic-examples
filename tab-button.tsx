@@ -1,9 +1,16 @@
-import React from 'react';
-import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonContent } from '@ionic/react';
-import { calendar, personCircle, map, informationCircle } from 'ionicons/icons';
+import React from "react";
+import {
+  IonTabs,
+  IonTabBar,
+  IonTabButton,
+  IonIcon,
+  IonLabel,
+  IonContent, IonPage,
+} from "@ionic/react";
+import { calendar, personCircle, map, informationCircle } from "ionicons/icons";
 
 export const TabButtonExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     <IonTabs>
       {/*-- Tab bar --*/}
       <IonTabBar slot="bottom">
@@ -28,5 +35,5 @@ export const TabButtonExample: React.FC = () => (
         </IonTabButton>
       </IonTabBar>
     </IonTabs>
-  </IonContent>
+  </IonContent></IonPage>
 );

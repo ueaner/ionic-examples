@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonToggle, IonList, IonItem, IonLabel, IonItemDivider } from '@ionic/react';
 
-export const ToggleExamples: React.FC = () => {
+export const ToggleExample: React.FC = () => {
   const [checked, setChecked] = useState(false);
   return (
     <IonPage>

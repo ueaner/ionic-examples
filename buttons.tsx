@@ -1,9 +1,9 @@
 import React from 'react';
-import { IonButtons, IonToolbar, IonBackButton, IonTitle, IonButton, IonIcon, IonMenuButton, IonContent } from '@ionic/react';
+import { IonButtons, IonToolbar, IonBackButton, IonTitle, IonButton, IonIcon, IonMenuButton, IonContent, IonPage } from '@ionic/react';
 import { personCircle, search, star, ellipsisHorizontal, ellipsisVertical } from 'ionicons/icons';
 
 export const ButtonsExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     <IonToolbar>
       <IonButtons slot="start">
         <IonBackButton defaultHref="/" />
@@ -48,5 +48,5 @@ export const ButtonsExample: React.FC = () => (
       </IonButtons>
       <IonTitle>Collapsible Buttons</IonTitle>
     </IonToolbar>
-  </IonContent>
+  </IonContent></IonPage>
 );

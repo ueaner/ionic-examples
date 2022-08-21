@@ -2,7 +2,7 @@ import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonChip, IonLabel, IonIcon, IonAvatar } from '@ionic/react';
 import { pin, heart, closeCircle, close } from 'ionicons/icons';
 
-export const ChipExamples: React.FC = () => {
+export const ChipExample: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>

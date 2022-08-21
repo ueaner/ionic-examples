@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonBackButton, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonContent } from '@ionic/react';
+import { IonBackButton, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonContent, IonPage } from '@ionic/react';
 
 export const BackButtonExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default back button --*/}
     <IonHeader>
       <IonToolbar>
@@ -48,5 +48,5 @@ export const BackButtonExample: React.FC = () => (
         </IonButtons>
       </IonToolbar>
     </IonHeader>
-  </IonContent>
+  </IonContent></IonPage>
 );

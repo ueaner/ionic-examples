@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonGrid, IonRow, IonCol, IonContent } from '@ionic/react';
+import { IonGrid, IonRow, IonCol, IonContent, IonPage } from '@ionic/react';
 
 export const GridExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     <IonGrid>
       <IonRow>
         <IonCol>ion-col</IonCol>
@@ -132,5 +132,5 @@ export const GridExample: React.FC = () => (
         </IonCol>
       </IonRow>
     </IonGrid>
-  </IonContent>
+  </IonContent></IonPage>
 );

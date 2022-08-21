@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { IonButton, IonIcon, IonContent } from '@ionic/react';
+import { IonButton, IonIcon, IonContent, IonPage } from '@ionic/react';
 import { star } from 'ionicons/icons';
 
 export const ButtonExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default --*/}
     <IonButton>Default</IonButton>
 
@@ -53,6 +53,6 @@ export const ButtonExample: React.FC = () => (
     <IonButton size="large">Large</IonButton>
     <IonButton>Default</IonButton>
     <IonButton size="small">Small</IonButton>
-  </IonContent>
+  </IonContent></IonPage>
 );
 

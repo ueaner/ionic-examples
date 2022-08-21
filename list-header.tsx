@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonButton, IonContent, IonItem, IonLabel, IonList, IonListHeader } from '@ionic/react';
+import { IonButton, IonContent, IonPage, IonItem, IonLabel, IonList, IonListHeader } from '@ionic/react';
 
 export const ListHeaderExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default List Header --*/}
     <IonListHeader>
       <IonLabel>List Header</IonLabel>
@@ -65,5 +65,5 @@ export const ListHeaderExample: React.FC = () => (
         </IonLabel>
       </IonItem>
     </IonList>
-  </IonContent>
+  </IonContent></IonPage>
 );

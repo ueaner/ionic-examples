@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonRouterOutlet } from '@ionic/react';
+import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonList, IonItem, IonRouterOutlet } from '@ionic/react';
 
 export const MenuExample: React.FC = () => (
   <>
@@ -9,7 +9,7 @@ export const MenuExample: React.FC = () => (
           <IonTitle>Start Menu</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonPage><IonContent>
         <IonList>
           <IonItem>Menu Item</IonItem>
           <IonItem>Menu Item</IonItem>
@@ -17,7 +17,7 @@ export const MenuExample: React.FC = () => (
           <IonItem>Menu Item</IonItem>
           <IonItem>Menu Item</IonItem>
         </IonList>
-      </IonContent>
+      </IonContent></IonPage>
     </IonMenu>
 
     <IonMenu side="start" menuId="custom" className="my-custom-menu">
@@ -26,7 +26,7 @@ export const MenuExample: React.FC = () => (
           <IonTitle>Custom Menu</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonPage><IonContent>
         <IonList>
           <IonItem>Menu Item</IonItem>
           <IonItem>Menu Item</IonItem>
@@ -34,7 +34,7 @@ export const MenuExample: React.FC = () => (
           <IonItem>Menu Item</IonItem>
           <IonItem>Menu Item</IonItem>
         </IonList>
-      </IonContent>
+      </IonContent></IonPage>
     </IonMenu>
 
     <IonMenu side="end" type="push">
@@ -43,7 +43,7 @@ export const MenuExample: React.FC = () => (
           <IonTitle>End Menu</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonPage><IonContent>
         <IonList>
           <IonItem>Menu Item</IonItem>
           <IonItem>Menu Item</IonItem>
@@ -51,7 +51,7 @@ export const MenuExample: React.FC = () => (
           <IonItem>Menu Item</IonItem>
           <IonItem>Menu Item</IonItem>
         </IonList>
-      </IonContent>
+      </IonContent></IonPage>
     </IonMenu>
     <IonRouterOutlet></IonRouterOutlet>
   </>

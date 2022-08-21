@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonRadioGroup, IonListHeader, IonLabel, IonItem, IonRadio, IonItemDivider } from '@ionic/react';
 
-export const RadioExamples: React.FC = () => {
+export const RadioExample: React.FC = () => {
   const [selected, setSelected] = useState<string>('biff');
   return (
     <IonPage>

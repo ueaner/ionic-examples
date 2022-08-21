@@ -1,51 +1,48 @@
-import { 
+import {
   IonButton,
-  IonContent, 
+  IonContent,
   IonHeader,
-  IonInfiniteScroll, 
-  IonInfiniteScrollContent, 
+  IonInfiniteScroll,
+  IonInfiniteScrollContent,
   IonItem,
   IonLabel,
-  IonList,  
-  IonPage, 
-  IonTitle, 
+  IonList,
+  IonPage,
+  IonTitle,
   IonToolbar,
-  useIonViewWillEnter
-} from '@ionic/react';
-import { useState } from 'react';
+  useIonViewWillEnter,
+} from "@ionic/react";
+import { useState } from "react";
 
-const InfiniteScrollExample: React.FC = () => {
+export const InfiniteScrollExample: React.FC = () => {
   const [data, setData] = useState<string[]>([]);
   const [isInfiniteDisabled, setInfiniteDisabled] = useState(false);
-  
+
   const pushData = () => {
     const max = data.length + 20;
     const min = max - 20;
     const newData = [];
     for (let i = min; i < max; i++) {
-      newData.push('Item' + i);
+      newData.push("Item" + i);
     }
-    
-    setData([
-      ...data,
-      ...newData
-    ]);
-  }
+
+    setData([...data, ...newData]);
+  };
   const loadData = (ev: any) => {
     setTimeout(() => {
       pushData();
-      console.log('Loaded data');
+      console.log("Loaded data");
       ev.target.complete();
       if (data.length === 1000) {
         setInfiniteDisabled(true);
       }
     }, 500);
-  }  
-  
+  };
+
   useIonViewWillEnter(() => {
     pushData();
   });
-  
+
   return (
     <IonPage>
       <IonHeader>
@@ -59,21 +56,24 @@ const InfiniteScrollExample: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        
-        <IonButton onClick={() => setInfiniteDisabled(!isInfiniteDisabled)} expand="block">
+
+        <IonButton
+          onClick={() => setInfiniteDisabled(!isInfiniteDisabled)}
+          expand="block"
+        >
           Toggle Infinite Scroll
         </IonButton>
-        
+
         <IonList>
           {data.map((item, index) => {
             return (
               <IonItem key={index}>
                 <IonLabel>{item}</IonLabel>
               </IonItem>
-            )
+            );
           })}
         </IonList>
-        
+
         <IonInfiniteScroll
           onIonInfinite={loadData}
           threshold="100px"
@@ -88,5 +88,3 @@ const InfiniteScrollExample: React.FC = () => {
     </IonPage>
   );
 };
-
-export default InfiniteScrollExample;

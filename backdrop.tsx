@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonBackdrop, IonContent } from '@ionic/react';
+import { IonBackdrop, IonContent, IonPage } from '@ionic/react';
 
 export const BackdropExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default backdrop --*/}
     <IonBackdrop />
 
@@ -16,5 +16,5 @@ export const BackdropExample: React.FC = () => (
     <IonBackdrop stopPropagation={false} />
 
     <IonBackdrop tappable={true} visible={true} stopPropagation={true} />
-  </IonContent>
+  </IonContent></IonPage>
 );

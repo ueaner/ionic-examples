@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonItemDivider, IonLabel, IonList, IonItem, IonContent } from '@ionic/react';
+import { IonItemDivider, IonLabel, IonList, IonItem, IonContent, IonPage } from '@ionic/react';
 
 export const ItemDividerExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     <IonItemDivider>
       <IonLabel>
         Basic Item Divider
@@ -41,5 +41,5 @@ export const ItemDividerExample: React.FC = () => (
       <IonItem><IonLabel>B4</IonLabel></IonItem>
       <IonItem><IonLabel>B5</IonLabel></IonItem>
     </IonList>
-  </IonContent>
+  </IonContent></IonPage>
 );

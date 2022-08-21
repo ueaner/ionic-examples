@@ -1,8 +1,8 @@
 import React from "react";
-import { IonContent } from "@ionic/react";
+import { IonContent, IonPage } from "@ionic/react";
 
 export const ContentExample: React.FC = () => (
-  <IonContent
+  <IonPage><IonContent
     scrollEvents={true}
     onIonScrollStart={() => {}}
     onIonScroll={() => {}}
@@ -13,5 +13,5 @@ export const ContentExample: React.FC = () => (
     <div slot="fixed">
       <h1>Fixed Content</h1>
     </div>
-  </IonContent>
+  </IonContent></IonPage>
 );

@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonList, IonItem, IonLabel, IonInput, IonToggle, IonRadio, IonCheckbox, IonItemSliding, IonItemOption, IonItemOptions, IonContent } from '@ionic/react';
+import { IonList, IonItem, IonLabel, IonInput, IonToggle, IonRadio, IonCheckbox, IonItemSliding, IonItemOption, IonItemOptions, IonContent, IonPage } from '@ionic/react';
 
 export const ListExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- List of Text Items --*/}
     <IonList>
       <IonItem>
@@ -62,5 +62,5 @@ export const ListExample: React.FC = () => (
         </IonItemOptions>
       </IonItemSliding>
     </IonList>
-  </IonContent>
+  </IonContent></IonPage>
 );

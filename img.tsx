@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonList, IonItem, IonThumbnail, IonImg, IonLabel, IonContent } from '@ionic/react';
+import { IonList, IonItem, IonThumbnail, IonImg, IonLabel, IonContent, IonPage } from '@ionic/react';
 
 type Item = {
   src: string;
@@ -8,7 +8,7 @@ type Item = {
 const items: Item[] = [{ src: 'http://placekitten.com/g/200/300', text: 'a picture of a cat' }];
 
 export const ImgExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     <IonList>
       {items.map((image, i) => (
         <IonItem key={i}>
@@ -19,5 +19,5 @@ export const ImgExample: React.FC = () => (
         </IonItem>
       ))}
     </IonList>
-  </IonContent>
+  </IonContent></IonPage>
 );

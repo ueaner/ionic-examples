@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonRefresher, IonRefresherContent } from '@ionic/react';
+import { IonContent, IonPage, IonRefresher, IonRefresherContent } from '@ionic/react';
 import { RefresherEventDetail } from '@ionic/core';
 import { chevronDownCircleOutline } from 'ionicons/icons';
 
@@ -13,23 +13,23 @@ function doRefresh(event: CustomEvent<RefresherEventDetail>) {
 }
 
 export const RefresherExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default Refresher --*/}
-    <IonContent>
+    <IonPage><IonContent>
       <IonRefresher slot="fixed" onIonRefresh={doRefresh}>
         <IonRefresherContent></IonRefresherContent>
       </IonRefresher>
-    </IonContent>
+    </IonContent></IonPage>
 
     {/*-- Custom Refresher Properties --*/}
-    <IonContent>
+    <IonPage><IonContent>
       <IonRefresher slot="fixed" onIonRefresh={doRefresh} pullFactor={0.5} pullMin={100} pullMax={200}>
         <IonRefresherContent></IonRefresherContent>
       </IonRefresher>
-    </IonContent>
+    </IonContent></IonPage>
 
     {/*-- Custom Refresher Content --*/}
-    <IonContent>
+    <IonPage><IonContent>
       <IonRefresher slot="fixed" onIonRefresh={doRefresh}>
         <IonRefresherContent
           pullingIcon={chevronDownCircleOutline}
@@ -38,6 +38,6 @@ export const RefresherExample: React.FC = () => (
           refreshingText="Refreshing...">
         </IonRefresherContent>
       </IonRefresher>
-    </IonContent>
-  </IonContent>
+    </IonContent></IonPage>
+  </IonContent></IonPage>
 );

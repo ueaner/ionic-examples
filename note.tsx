@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonNote, IonList, IonItem, IonLabel, IonContent } from '@ionic/react';
+import { IonNote, IonList, IonItem, IonLabel, IonContent, IonPage } from '@ionic/react';
 
 export const NoteExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default Note --*/}
     <IonNote>Default Note</IonNote><br />
 
@@ -25,5 +25,5 @@ export const NoteExample: React.FC = () => (
         <IonLabel>Note (Start)</IonLabel>
       </IonItem>
     </IonList>
-  </IonContent>
+  </IonContent></IonPage>
 );

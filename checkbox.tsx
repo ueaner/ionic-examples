@@ -7,7 +7,7 @@ const checkboxList = [
   { val: 'Mushroom', isChecked: false }
 ];
 
-export const CheckboxExamples: React.FC = () => {
+export const CheckboxExample: React.FC = () => {
 
   const [checked, setChecked] = useState(false);
 

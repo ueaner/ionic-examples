@@ -1,9 +1,9 @@
 import React from 'react';
-import { IonFab, IonFabButton, IonFabList, IonContent, IonIcon } from '@ionic/react';
+import { IonFab, IonFabButton, IonFabList, IonContent, IonPage, IonIcon } from '@ionic/react';
 import { logoFacebook, logoTwitter, logoYoutube, logoPwa, logoNpm, logoIonic, logoGithub, logoJavascript, logoAngular, logoVimeo, logoChrome, logoReact } from 'ionicons/icons';
 
 export const FabListExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     <IonFab vertical="center" horizontal="center">
       <IonFabButton>Share</IonFabButton>
       <IonFabList side="top">
@@ -54,6 +54,6 @@ export const FabListExample: React.FC = () => (
         </IonFabButton>
       </IonFabList>
     </IonFab>
-  </IonContent>
+  </IonContent></IonPage>
 );
 

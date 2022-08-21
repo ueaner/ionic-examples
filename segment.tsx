@@ -2,7 +2,7 @@ import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonSegment, IonSegmentButton, IonLabel, IonIcon } from '@ionic/react';
 import { call, home, heart, pin, star, globe, basket, camera, bookmark } from 'ionicons/icons';
 
-export const SegmentExamples: React.FC = () => {
+export const SegmentExample: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>

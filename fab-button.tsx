@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonContent, IonFab, IonFabButton } from '@ionic/react';
+import { IonContent, IonPage, IonFab, IonFabButton } from '@ionic/react';
 
 export const FabButtonExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Fixed Floating Action Button that does not scroll with the content --*/}
     <IonFab slot="fixed">
       <IonFabButton>Button</IonFabButton>
@@ -20,5 +20,5 @@ export const FabButtonExample: React.FC = () => (
     <IonFabButton color="danger">Danger</IonFabButton>
     <IonFabButton color="light">Light</IonFabButton>
     <IonFabButton color="dark">Dark</IonFabButton>
-  </IonContent>
+  </IonContent></IonPage>
 );

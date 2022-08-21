@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonSpinner, IonContent } from '@ionic/react';
+import { IonSpinner, IonContent, IonPage } from '@ionic/react';
 
 export const SpinnerExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default Spinner --*/}
     <IonSpinner />
 
@@ -26,5 +26,5 @@ export const SpinnerExample: React.FC = () => (
 
     {/*-- Paused Default Spinner --*/}
     <IonSpinner paused />
-  </IonContent>
+  </IonContent></IonPage>
 );

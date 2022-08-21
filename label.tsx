@@ -1,8 +1,8 @@
 import React from 'react';
-import { IonLabel, IonItem, IonInput, IonToggle, IonCheckbox, IonContent } from '@ionic/react';
+import { IonLabel, IonItem, IonInput, IonToggle, IonCheckbox, IonContent, IonPage } from '@ionic/react';
 
 export const LabelExample: React.FC = () => (
-  <IonContent>
+  <IonPage><IonContent>
     {/*-- Default Label --*/}
     <IonLabel>Label</IonLabel><br />
 
@@ -55,5 +55,5 @@ export const LabelExample: React.FC = () => (
       <IonCheckbox slot="start" checked />
       <IonLabel>Checkbox</IonLabel>
     </IonItem>
-  </IonContent>
+  </IonContent></IonPage>
 );

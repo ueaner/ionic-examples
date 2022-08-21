@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { IonAlert, IonButton, IonContent } from "@ionic/react";
+import { IonAlert, IonButton, IonContent, IonPage } from "@ionic/react";
 
 export const AlertExample: React.FC = () => {
   const [showAlert, setShowAlert] = useState(false);
 
   return (
-    <IonContent>
+    <IonPage><IonContent>
       <IonButton onClick={() => setShowAlert(true)}>Click Me</IonButton>
       <IonAlert
         isOpen={showAlert}
@@ -15,6 +15,6 @@ export const AlertExample: React.FC = () => {
         message="This is an alert!"
         buttons={["OK"]}
       />
-    </IonContent>
+    </IonContent></IonPage>
   );
 };
